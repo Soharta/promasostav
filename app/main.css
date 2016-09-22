@@ -2,7 +2,10 @@ html, body {
     margin: 0;
 }
 #ssproma .link {
-	text-decoration: none;
+    width: 240px;
+    height: 100px;
+    text-decoration: none;
+    position: absolute;
 }
 #ssproma .wrapper {
     width: 240px;
@@ -24,11 +27,11 @@ html, body {
     position: absolute;
 }
 #ssproma .image__logo {
-	width: 882px;
-	position: absolute;
+    width: 882px;
+    position: absolute;
     top: -2px;
     left: 0px;
-	animation: amin_logo 15s linear infinite;
+    animation: amin_logo 15s linear infinite;
 }
 @keyframes amin_logo {
     0% {opacity: 0; width: 882px;}
@@ -39,15 +42,15 @@ html, body {
     to {opacity: 1; width: 150px; top: 15px; left: -30px;}
 }
 #ssproma .text {
-	position: absolute;
-	font: normal .9em Arial, serif;
-	color: #000;
+    position: absolute;
+    font: normal .9em Arial, serif;
+    color: #000;
 }
 #ssproma .content__text1 {
-	font-size: .8em;
-	top: 13px;
-	left: 240px;
-	animation: text1 15s linear infinite;
+    font-size: .8em;
+    top: 13px;
+    left: 240px;
+    animation: text1 15s linear infinite;
 }
 @keyframes text1 {
     10% {left: 240px;}
@@ -55,10 +58,10 @@ html, body {
     to {left: 128px;}
 }
 #ssproma .content__text2 {
-	font-size: .8em;
-	top: 26px;
-	left: 240px;
-	animation: text2 15s linear infinite;
+    font-size: .8em;
+    top: 26px;
+    left: 240px;
+    animation: text2 15s linear infinite;
 }
 @keyframes text2 {
     10% {left: 240px;}
@@ -66,9 +69,9 @@ html, body {
     to {left: 170px;}
 }
 #ssproma .content__text3 {
-	top: 58px;
-	left: -100px;
-	animation: text3 15s linear infinite;
+    top: 58px;
+    left: -100px;
+    animation: text3 15s linear infinite;
 }
 @keyframes text3 {
     25% {left: -100px;}
@@ -76,10 +79,10 @@ html, body {
     to {left: 15px;}
 }
 #ssproma .content__text4 {
-	white-space: nowrap;
-	top: 58px;
-	left: 240px;
-	animation: text4 15s linear infinite;
+    white-space: nowrap;
+    top: 58px;
+    left: 240px;
+    animation: text4 15s linear infinite;
 }
 @keyframes text4 {
     35% {left: 240px; font-weight: normal;}
@@ -91,9 +94,9 @@ html, body {
     to {left: 105px; font-weight: bold;}
 }
 #ssproma .content__text5 {
-	top: 75px;
-	left: 240px;
-	animation: text5 15s linear infinite;
+    top: 75px;
+    left: 240px;
+    animation: text5 15s linear infinite;
 }
 @keyframes text5 {
     35% {left: 240px; font-weight: normal;}
@@ -105,13 +108,13 @@ html, body {
     to {left: 123px; font-weight: bold;}
 }
 #ssproma .content__fonunderresult {
-	width: 240px;
-	height: 38px;
-	background: #FFF;
-	position: absolute;
-	top: 55px;
-	left: 240px;
-	animation: fonunderresult 15s linear infinite;
+    width: 240px;
+    height: 38px;
+    background: #FFF;
+    position: absolute;
+    top: 55px;
+    left: 240px;
+    animation: fonunderresult 15s linear infinite;
 }
 @keyframes fonunderresult {
     45% {left: 240px;}

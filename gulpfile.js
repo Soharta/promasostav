@@ -57,17 +57,17 @@ gulp.task('build:css', function() {
 		.pipe(reload({stream: true}));
 });
 
-gulp.task('build:img', function() {
-	gulp.src(path.src.img)
-		.pipe(imagemin({
-			// progressive: true,
-   //          svgoPlugins: [{removeViewBox: false}],
-            use: [pngquant()],
-            interlaced: true
-		}))
-		.pipe(gulp.dest(path.build.img))
-		.pipe(reload({stream: true}));
-});
+// gulp.task('build:img', function() {
+// 	gulp.src(path.src.img)
+// 		.pipe(imagemin({
+// 			progressive: true,
+//             svgoPlugins: [{removeViewBox: false}],
+//             use: [pngquant()],
+//             interlaced: true
+// 		}))
+// 		.pipe(gulp.dest(path.build.img))
+// 		.pipe(reload({stream: true}));
+// });
 
 gulp.task('watch', function() {
 	watch([path.watch.html], function(event, cb) {
@@ -76,9 +76,9 @@ gulp.task('watch', function() {
 	watch([path.watch.css], function(event, cb) {
 		gulp.start('build:css');
 	});
-	watch([path.watch.img], function(event, cb) {
-		gulp.start('build:img');
-	});
+	// watch([path.watch.img], function(event, cb) {
+	// 	gulp.start('build:img');
+	// });
 });
 gulp.task('clean', function(cb) {
 	rimraf(path.clean, cb);
@@ -86,8 +86,8 @@ gulp.task('clean', function(cb) {
 
 gulp.task('build', [
 	'build:css',
-	'build:html',
-	'build:img'
+	'build:html'
+	// 'build:img'
 ]);
 
 gulp.task('default', ['build', 'server', 'watch'])
